@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #FFFAF0; /* Light Yellow Background */
+}
+
+header {
+    background: #8B7355; /* Darker Yellow for Header */
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    margin-top: 60px;
+}
+
+section {
+    padding: 4rem 2rem;
+}
+
+#about {
+    background: #FFFFE0; /* Lighter Yellow for About Section */
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 0;
+    justify-content: center;
+}
+
+.col-md-6 {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+@media (min-width: 768px) {
+    .col-md-6 {
+        width: calc(50% - 1rem);
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-6 {
+        width: calc(33.333% - 1.33rem);
+    }
+}
+
+footer {
+    background: #8B7355; /* Darker Yellow for Footer */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Custom styles */
+body {
+    font-family: 'Microsoft JhengHei', Arial, sans-serif;
+}
+
+.project {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #FFFFE0;
+    transition: transform 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.project p {
+    margin: 10px 0;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#webcam-container {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.modal-content {
+    background-color: #FFFAF0;
+}
+
+.modal-header {
+    border-bottom: 1px solid #8B7355;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+#label-container {
+    margin-top: 15px;
+}
+
+.prediction-label {
+    padding: 8px;
+    margin: 5px 0;
+    background: #FFFFE0;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.project h3 {
+    margin-bottom: 10px;
+}
+
+.text-start {
+    text-align: left;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+#about h3 {
+    color: #8B7355;
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
