@@ -14,7 +14,7 @@ const projects = [
         title: "AI 旅遊行程推薦系統",
         description: "組合 KMeans、folium與 Streamlit 的 AI 行程規劃系統，支援景點推薦、地圖視覺化。",
         image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&auto=format&fit=crop&q=60",
-        link: "B11108030-鄭煛-AI旅遊行程推薦系統.pdf"
+        link: "https://yuyuyuyu0101.github.io/B11108030-鄭煜-AI旅遊行程推薦系統.pdf"
     }
 ];
 
