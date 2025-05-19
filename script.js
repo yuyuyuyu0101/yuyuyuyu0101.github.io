@@ -6,13 +6,6 @@ const projects = [
         description: "運用 Teachable Machine 開發影像辨識模型，實現即時物件識別功能。",
         image: "attached_assets/人工智慧應用課堂作業.pptx"
     },
-    {
-    title: "AI 旅遊行程推薦系統",
-    description: "結合 KMeans、folium 與 Streamlit 製作的 AI 旅遊推薦系統，含行程自動排程與地圖顯示功能。",
-    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&auto=format&fit=crop&q=60",
-    link: "B11108030-鄭煜-AI旅遊行程推薦系統.pdf"
-}
-
   
     {
         title: "網頁程式設計作品",
