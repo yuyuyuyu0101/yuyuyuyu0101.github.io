@@ -1,4 +1,14 @@
-// 作品資料
+// 人工智慧應用期末專題資料
+const aiProjects = [
+    {
+        title: "AI 旅遊行程推薦系統",
+        description: "組合 KMeans、folium與 Streamlit 的 AI 行程規劃系統，支援景點推薦、地圖視覺化。",
+        image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&auto=format&fit=crop&q=60",
+        link: "https://yuyuyuyu0101.github.io/B11108030-鄭煜-AI旅遊行程推薦系統.pdf"
+    }
+];
+
+// 一般作品集資料
 const projects = [
     {
         title: "人工智慧應用課程專案",
@@ -9,19 +19,13 @@ const projects = [
         title: "網頁程式設計作品",
         description: "使用HTML、CSS和JavaScript開發響應式個人作品集網站。",
         image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=500&auto=format&fit=crop&q=60"
-    },
-    {
-        title: "AI 旅遊行程推薦系統",
-        description: "組合 KMeans、folium與 Streamlit 的 AI 行程規劃系統，支援景點推薦、地圖視覺化。",
-        image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&auto=format&fit=crop&q=60",
-        link: "https://yuyuyuyu0101.github.io/B11108030-鄭煜-AI旅遊行程推薦系統.pdf"
     }
 ];
 
-// 顯示作品
-function displayProjects() {
-    const projectGrid = document.querySelector('.project-grid');
-    projects.forEach(project => {
+// 顯示作品（共用函式）
+function displayProjectsSection(containerClass, dataList) {
+    const container = document.querySelector(containerClass);
+    dataList.forEach(project => {
         const projectElement = document.createElement('div');
         projectElement.className = 'col-md-6 col-lg-4';
 
@@ -44,12 +48,13 @@ function displayProjects() {
               `;
 
         projectElement.innerHTML = content;
-        projectGrid.appendChild(projectElement);
+        container.appendChild(projectElement);
     });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    displayProjects();
+    displayProjectsSection('.ai-project-grid', aiProjects);
+    displayProjectsSection('.project-grid', projects);
     initTeachableMachine();
 });
 
