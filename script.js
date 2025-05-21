@@ -13,7 +13,7 @@ const projects = [
     {
         title: "人工智慧應用課程專案",
         description: "運用 Teachable Machine 開發影像辨識模型，實現即時物件識別功能。",
-        image: "attached_assets/人工智慧應用課堂作業.pptx"
+        image: "https://images.unsplash.com/photo-1581090700227-1e8e3670a9f9?w=500&auto=format&fit=crop&q=60"
     },
     {
         title: "網頁程式設計作品",
